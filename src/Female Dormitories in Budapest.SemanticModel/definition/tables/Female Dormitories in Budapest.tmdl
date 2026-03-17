@@ -1,0 +1,63 @@
+table 'Female Dormitories in Budapest'
+	lineageTag: 463aef7d-127a-418a-912d-59bca6f05b3c
+
+	column 'Hotel Name'
+		dataType: string
+		lineageTag: 34c7aed1-1103-4386-a668-d201480fd3b7
+		summarizeBy: none
+		sourceColumn: Hotel Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Rating
+		dataType: double
+		lineageTag: 57c0e016-7a4e-4fd7-933d-ec8c4b71f9cb
+		summarizeBy: sum
+		sourceColumn: Rating
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Price
+		dataType: string
+		lineageTag: 13d7958f-a0f3-4649-90b3-dbfd7d414bf4
+		summarizeBy: none
+		sourceColumn: Price
+
+		annotation SummarizationSetBy = Automatic
+
+	column Reviews
+		dataType: string
+		lineageTag: 39cf8b49-7e42-4f4a-b9e2-dabb0316b37a
+		summarizeBy: none
+		sourceColumn: Reviews
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Female Dormitories in Budapest' = m
+		mode: import
+		source = ```
+				let
+				    Source = Web.BrowserContents("https://www.google.com/travel/search?q=Female%20Dormitories%20in%20Budapest&g2lb=4965990%2C72471280%2C72560029%2C72573224%2C72647020%2C72686036%2C72803964%2C72882230%2C72958624%2C73059275%2C73064764%2C121529350&hl=en-BD&gl=bd&ssta=1&ts=CAEaRwopEicyJTB4NDc0MWRiZjdlZDRlMzRjNToweGNlODEzMzZkZTQxOGZmY2USGhIUCgcI6g8QAxgWEgcI6g8QAxgXGAEyAhAA&qs=CAEyFENnc0l6dl9qb043dHpNRE9BUkFCOAJCCQnO_xjkbTOBzkIJCc7_GORtM4HO&ap=ugEHcmV2aWV3cw&ictx=111&ved=0CAAQ5JsGahcKEwjAh6qVmZ-TAxUAAAAAHQAAAAAQBw"),
+				    #"Extracted Table From Html" = Html.Table(Source, {{"Column1", ".gBsuBd H2"}, {"Column2", ".gBsuBd .KFi5wf"}, {"Column3", ".gBsuBd .jdzyld"}, {"Column4", ".XCgKOb .VfPpkd-vQzf8d"}, {"Column5", ".gBsuBd H2 + *"}}, [RowSelector=".XCgKOb"]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Extracted Table From Html",{{"Column1", type text}, {"Column2", type number}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Changed Type",{{"Column1", "Hotel Name"}, {"Column2", "Rating"}, {"Column3", "Reviews"}, {"Column4", "Action"}, {"Column5", "Price"}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Renamed Columns",{"Action"}),
+				    #"Added Custom" = Table.AddColumn(#"Removed Columns", "Reviews.1", each let
+				    raw = Text.BetweenDelimiters([Reviews], "(", ")"),
+				    cleaned = if Text.EndsWith(raw, "k") 
+				              then Number.From(Text.Start(raw, Text.Length(raw)-1)) * 1000
+				              else Number.From(raw)
+				in cleaned),
+				    #"Removed Columns1" = Table.RemoveColumns(#"Added Custom",{"Reviews"}),
+				    #"Renamed Columns1" = Table.RenameColumns(#"Removed Columns1",{{"Reviews.1", "Reviews"}}),
+				    #"Reordered Columns" = Table.ReorderColumns(#"Renamed Columns1",{"Hotel Name", "Rating", "Price", "Reviews"})
+				in
+				    #"Reordered Columns"
+				```
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
