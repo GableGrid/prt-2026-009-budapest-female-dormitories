@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Female Dormitories in Budapest"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "65e5ee7f-2311-45a4-bb47-2c3daa3e118a"
+  }
+}

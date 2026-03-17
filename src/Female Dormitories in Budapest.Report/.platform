@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Female Dormitories in Budapest"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "880ea5ff-76d7-4ee9-8257-68dcfc1d3238"
+  }
+}
