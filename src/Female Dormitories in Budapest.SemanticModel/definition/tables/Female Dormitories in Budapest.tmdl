@@ -1,6 +1,39 @@
 table 'Female Dormitories in Budapest'
 	lineageTag: 463aef7d-127a-418a-912d-59bca6f05b3c
 
+	measure 'Total Revenue' = SUM('Female Dormitories in Budapest'[Price])
+		lineageTag: ae8de5cc-ed61-45bc-83a6-48db108e59af
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Count' = COUNT('Female Dormitories in Budapest'[Hotel Name])
+		formatString: 0
+		lineageTag: 3bf88fae-4385-4603-ba3e-8f58428dddab
+
+	measure 'Avg Price' = ```
+			
+			    AVERAGEX(
+			        FILTER(
+			            'Female Dormitories in Budapest',
+			            NOT(ISBLANK('Female Dormitories in Budapest'[Price]))
+			        ),
+			        'Female Dormitories in Budapest'[Price]
+			    )
+			```
+		lineageTag: 9a7b2dc1-1ef8-41d4-bd00-3d0dbb1ff079
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'AVG Rating' =
+			
+			AVERAGEX(
+			    'Female Dormitories in Budapest',
+			    'Female Dormitories in Budapest'[Rating]
+			)
+		lineageTag: 65d0bc43-ebf0-44d9-875a-409438466b5c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column 'Hotel Name'
 		dataType: string
 		lineageTag: 34c7aed1-1103-4386-a668-d201480fd3b7
@@ -21,13 +54,14 @@ table 'Female Dormitories in Budapest'
 
 	column Price
 		dataType: double
+		formatString: 0
 		lineageTag: 13d7958f-a0f3-4649-90b3-dbfd7d414bf4
 		summarizeBy: sum
 		sourceColumn: Price
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"isDecimal":true}
 
 	column Reviews
 		dataType: string
