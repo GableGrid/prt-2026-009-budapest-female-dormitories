@@ -1,6 +1,24 @@
 table 'Female Dormitories in Budapest'
 	lineageTag: 463aef7d-127a-418a-912d-59bca6f05b3c
 
+	measure 'Avg Rating' = AVERAGE('Female Dormitories in Budapest'[Rating])
+		lineageTag: 92fb696c-d500-4061-8392-4d196eebe828
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Avg Price' = ```
+			
+			    AVERAGEX(
+			        FILTER(
+			            'Female Dormitories in Budapest',
+			            NOT(ISBLANK('Female Dormitories in Budapest'[Price]))
+			        ),
+			        'Female Dormitories in Budapest'[Price]
+			    )
+			```
+		formatString: 0
+		lineageTag: 8b7038e8-9179-419f-889e-599a54d6b0e7
+
 	column 'Hotel Name'
 		dataType: string
 		lineageTag: 34c7aed1-1103-4386-a668-d201480fd3b7
@@ -20,12 +38,15 @@ table 'Female Dormitories in Budapest'
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column Price
-		dataType: string
+		dataType: double
+		formatString: 0
 		lineageTag: 13d7958f-a0f3-4649-90b3-dbfd7d414bf4
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: Price
 
 		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDecimal":true}
 
 	column Reviews
 		dataType: string
@@ -52,9 +73,14 @@ table 'Female Dormitories in Budapest'
 				in cleaned),
 				    #"Removed Columns1" = Table.RemoveColumns(#"Added Custom",{"Reviews"}),
 				    #"Renamed Columns1" = Table.RenameColumns(#"Removed Columns1",{{"Reviews.1", "Reviews"}}),
-				    #"Reordered Columns" = Table.ReorderColumns(#"Renamed Columns1",{"Hotel Name", "Rating", "Price", "Reviews"})
+				    #"Replaced Value" = Table.ReplaceValue(#"Renamed Columns1","BDT","",Replacer.ReplaceText,{"Price"}),
+				    #"Replaced Value1" = Table.ReplaceValue(#"Replaced Value","#(00A0)","",Replacer.ReplaceText,{"Price"}),
+				    #"Replaced Value2" = Table.ReplaceValue(#"Replaced Value1","5,080","5,080",Replacer.ReplaceText,{"Price"}),
+				    #"Replaced Value3" = Table.ReplaceValue(#"Replaced Value2","·","",Replacer.ReplaceText,{"Price"}),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Replaced Value3",{{"Price", type number}}),
+				    #"Replaced Value4" = Table.ReplaceValue(#"Changed Type1",null,0,Replacer.ReplaceValue,{"Price"})
 				in
-				    #"Reordered Columns"
+				    #"Replaced Value4"
 				```
 
 	annotation PBI_NavigationStepName = Navigation
