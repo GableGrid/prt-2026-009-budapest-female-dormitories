@@ -6,7 +6,8 @@
     "y": 8.4432717678100531,
     "z": 8000,
     "height": 251.60949868073891,
-    "width": 597.948387927151
+    "width": 597.948387927151,
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "donutChart",
@@ -266,7 +267,7 @@
                         }
                       }
                     ],
-                    "Top": 5
+                    "Top": 7
                   }
                 }
               },
@@ -306,7 +307,7 @@
         }
       },
       {
-        "name": "b0260af5551cc4431950",
+        "name": "f0fd5ae15afe73256292",
         "field": {
           "Measure": {
             "Expression": {

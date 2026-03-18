@@ -2,11 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "e04c805e7d2c19c63502",
   "position": {
-    "x": 11.757368814640273,
-    "y": 8.1842757013127532,
+    "x": 25.329815303430081,
+    "y": 447.49340369393144,
     "z": 4000,
-    "height": 252.07569160043383,
-    "width": 601.30543366303118
+    "height": 253.29815303430081,
+    "width": 601.16094986807389,
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "scatterChart",
@@ -22,12 +23,35 @@
                       "Entity": "Female Dormitories in Budapest"
                     }
                   },
-                  "Property": "Reviews"
+                  "Property": "Hotel Name"
                 }
               },
-              "queryRef": "Female Dormitories in Budapest.Reviews",
-              "nativeQueryRef": "Reviews",
+              "queryRef": "Female Dormitories in Budapest.Hotel Name",
+              "nativeQueryRef": "Hotel Name",
               "active": true
+            }
+          ]
+        },
+        "Size": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Female Dormitories in Budapest"
+                        }
+                      },
+                      "Property": "Reviews"
+                    }
+                  },
+                  "Function": 5
+                }
+              },
+              "queryRef": "CountNonNull(Female Dormitories in Budapest.Reviews)",
+              "nativeQueryRef": "Count of Reviews"
             }
           ]
         },
@@ -94,6 +118,13 @@
                   "Value": "true"
                 }
               }
+            },
+            "gridlineShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
             }
           }
         }
@@ -112,6 +143,20 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            },
+            "gridlineStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "'dotted'"
+                }
+              }
+            },
+            "gridlineThickness": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }
@@ -872,6 +917,61 @@
               }
             ]
           }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#9FC2E0'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "bubbles": [
+        {
+          "properties": {
+            "markerShape": {
+              "expr": {
+                "Literal": {
+                  "Value": "'circle'"
+                }
+              }
+            },
+            "bubbleSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "-20L"
+                }
+              }
+            },
+            "markerRangeType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'magnitude'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "markers": [
+        {
+          "properties": {
+            "borderShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
         }
       ]
     },
@@ -939,25 +1039,29 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "a4f1494bb910e8b74c75",
   "filterConfig": {
     "filters": [
       {
-        "name": "63aebb6c8383ae296832",
+        "name": "144c2c285d60d55dbeb6",
         "field": {
-          "Column": {
+          "Aggregation": {
             "Expression": {
-              "SourceRef": {
-                "Entity": "Female Dormitories in Budapest"
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Female Dormitories in Budapest"
+                  }
+                },
+                "Property": "Reviews"
               }
             },
-            "Property": "Reviews"
+            "Function": 5
           }
         },
-        "type": "Categorical"
+        "type": "Advanced"
       },
       {
-        "name": "122f30f490bfd8cb9508",
+        "name": "a73c893cbc05e60c8131",
         "field": {
           "Measure": {
             "Expression": {
@@ -971,7 +1075,21 @@
         "type": "Advanced"
       },
       {
-        "name": "4cf6f5e3a13556535ca5",
+        "name": "011d4073fd2d45f71d6f",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Female Dormitories in Budapest"
+              }
+            },
+            "Property": "Hotel Name"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "756fed7c1c2471b30063",
         "field": {
           "Measure": {
             "Expression": {

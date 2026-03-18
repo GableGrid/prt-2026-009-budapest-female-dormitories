@@ -184,28 +184,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "f235d53d05a006d7831e",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "4539fde5deb94cc77bdf",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Female Dormitories in Budapest"
-                  }
-                },
-                "Property": "Rating"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
-  }
+  "parentGroupName": "f235d53d05a006d7831e"
 }

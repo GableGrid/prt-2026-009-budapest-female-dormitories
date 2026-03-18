@@ -6,7 +6,8 @@
     "y": 9.5748031496063053,
     "z": 7000,
     "height": 234.58267716535423,
-    "width": 598.005249343832
+    "width": 598.005249343832,
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "lineChart",
@@ -882,6 +883,73 @@
               }
             ]
           }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0.2
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Female Dormitories in Budapest.AVG Rating"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": -0.25
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Female Dormitories in Budapest.Total Revenue"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "legendMarkerRendering": {
+              "expr": {
+                "Literal": {
+                  "Value": "'markerCircleDefault'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "lineStyles": [
+        {
+          "properties": {
+            "strokeWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "3D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Female Dormitories in Budapest.AVG Rating"
+          }
         }
       ]
     },
@@ -1054,7 +1122,7 @@
         }
       },
       {
-        "name": "47420a9424fa760eb59c",
+        "name": "474bcec479ddc1c2d527",
         "field": {
           "Measure": {
             "Expression": {
@@ -1068,7 +1136,7 @@
         "type": "Advanced"
       },
       {
-        "name": "0e30deb93e6f8a827986",
+        "name": "bdd4e22c14a6e463af25",
         "field": {
           "Measure": {
             "Expression": {
