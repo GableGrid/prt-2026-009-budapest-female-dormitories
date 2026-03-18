@@ -1,16 +1,16 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
-  "name": "e384b25ed750e15b02d6",
+  "name": "e04c805e7d2c19c63502",
   "position": {
-    "x": 11.743119266055047,
-    "y": 8.0883729638644439,
+    "x": 692.07349081364828,
+    "y": 450.18372703412069,
     "z": 3000,
-    "height": 253.97491106534358,
-    "width": 674.39056356487549,
-    "tabOrder": 0
+    "height": 270.4461942257218,
+    "width": 564.40944881889766,
+    "tabOrder": 1000
   },
   "visual": {
-    "visualType": "clusteredBarChart",
+    "visualType": "scatterChart",
     "query": {
       "queryState": {
         "Category": {
@@ -23,11 +23,30 @@
                       "Entity": "Female Dormitories in Budapest"
                     }
                   },
-                  "Property": "Hotel Name"
+                  "Property": "Reviews"
                 }
               },
-              "queryRef": "Female Dormitories in Budapest.Hotel Name",
-              "nativeQueryRef": "Count of Hotel Name",
+              "queryRef": "Female Dormitories in Budapest.Reviews",
+              "nativeQueryRef": "Reviews",
+              "active": true
+            }
+          ]
+        },
+        "X": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Female Dormitories in Budapest"
+                    }
+                  },
+                  "Property": "Total Revenue"
+                }
+              },
+              "queryRef": "Female Dormitories in Budapest.Total Revenue",
+              "nativeQueryRef": "Total Revenue",
               "active": true
             }
           ]
@@ -36,48 +55,20 @@
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Female Dormitories in Budapest"
-                        }
-                      },
-                      "Property": "Price"
+                    "SourceRef": {
+                      "Entity": "Female Dormitories in Budapest"
                     }
                   },
-                  "Function": 0
+                  "Property": "AVG Rating"
                 }
               },
-              "queryRef": "Sum(Female Dormitories in Budapest.Price)",
-              "nativeQueryRef": "Sum of Price"
+              "queryRef": "Female Dormitories in Budapest.AVG Rating",
+              "nativeQueryRef": "AVG Rating"
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Aggregation": {
-                "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "Female Dormitories in Budapest"
-                      }
-                    },
-                    "Property": "Price"
-                  }
-                },
-                "Function": 0
-              }
-            },
-            "direction": "Descending"
-          }
-        ],
-        "isDefaultSort": true
       }
     },
     "objects": {
@@ -95,6 +86,13 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -132,13 +130,6 @@
                       "Value": "'#14213D'"
                     }
                   }
-                }
-              }
-            },
-            "fillTransparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
                 }
               }
             }
@@ -180,13 +171,6 @@
                       "Value": "'#14213D'"
                     }
                   }
-                }
-              }
-            },
-            "fillTransparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "7D"
                 }
               }
             }
@@ -231,13 +215,6 @@
                   }
                 }
               }
-            },
-            "fillTransparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "12D"
-                }
-              }
             }
           },
           "selector": {
@@ -278,13 +255,6 @@
                       "Percent": -0.25
                     }
                   }
-                }
-              }
-            },
-            "fillTransparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "27D"
                 }
               }
             }
@@ -329,13 +299,6 @@
                   }
                 }
               }
-            },
-            "fillTransparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
-                }
-              }
             }
           },
           "selector": {
@@ -378,13 +341,6 @@
                   }
                 }
               }
-            },
-            "fillTransparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "20D"
-                }
-              }
             }
           },
           "selector": {
@@ -416,17 +372,6 @@
         },
         {
           "properties": {
-            "fillTransparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
-                }
-              }
-            }
-          }
-        },
-        {
-          "properties": {
             "fill": {
               "solid": {
                 "color": {
@@ -436,13 +381,6 @@
                       "Percent": -0.5
                     }
                   }
-                }
-              }
-            },
-            "fillTransparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "20D"
                 }
               }
             }
@@ -529,13 +467,6 @@
                   }
                 }
               }
-            },
-            "fillTransparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "20D"
-                }
-              }
             }
           },
           "selector": {
@@ -576,13 +507,6 @@
                       "Percent": -0.5
                     }
                   }
-                }
-              }
-            },
-            "fillTransparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "30D"
                 }
               }
             }
@@ -627,13 +551,6 @@
                   }
                 }
               }
-            },
-            "fillTransparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "40D"
-                }
-              }
             }
           },
           "selector": {
@@ -674,13 +591,6 @@
                       "Percent": -0.25
                     }
                   }
-                }
-              }
-            },
-            "fillTransparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "57D"
                 }
               }
             }
@@ -725,13 +635,6 @@
                   }
                 }
               }
-            },
-            "fillTransparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "75D"
-                }
-              }
             }
           },
           "selector": {
@@ -772,13 +675,6 @@
                       "Percent": -0.25
                     }
                   }
-                }
-              }
-            },
-            "fillTransparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "85D"
                 }
               }
             }
@@ -896,13 +792,6 @@
         },
         {
           "properties": {
-            "fillTransparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "15D"
-                }
-              }
-            },
             "fill": {
               "solid": {
                 "color": {
@@ -956,13 +845,6 @@
                   }
                 }
               }
-            },
-            "fillTransparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "55D"
-                }
-              }
             }
           },
           "selector": {
@@ -1011,13 +893,6 @@
                   "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
                 }
               }
-            },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Price by Hotel Name'"
-                }
-              }
             }
           }
         }
@@ -1057,112 +932,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "parentGroupName": "c64d106260d1c061d6eb",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "90c62efa8839c86e0aba",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Female Dormitories in Budapest"
-              }
-            },
-            "Property": "Price"
-          }
-        },
-        "type": "TopN",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "subquery",
-              "Expression": {
-                "Subquery": {
-                  "Query": {
-                    "Version": 2,
-                    "From": [
-                      {
-                        "Name": "f",
-                        "Entity": "Female Dormitories in Budapest",
-                        "Type": 0
-                      }
-                    ],
-                    "Select": [
-                      {
-                        "Column": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Source": "f"
-                            }
-                          },
-                          "Property": "Price"
-                        },
-                        "Name": "field"
-                      }
-                    ],
-                    "OrderBy": [
-                      {
-                        "Direction": 2,
-                        "Expression": {
-                          "Aggregation": {
-                            "Expression": {
-                              "Column": {
-                                "Expression": {
-                                  "SourceRef": {
-                                    "Source": "f"
-                                  }
-                                },
-                                "Property": "Price"
-                              }
-                            },
-                            "Function": 0
-                          }
-                        }
-                      }
-                    ],
-                    "Top": 7
-                  }
-                }
-              },
-              "Type": 2
-            },
-            {
-              "Name": "f",
-              "Entity": "Female Dormitories in Budapest",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "In": {
-                  "Expressions": [
-                    {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Source": "f"
-                          }
-                        },
-                        "Property": "Price"
-                      }
-                    }
-                  ],
-                  "Table": {
-                    "SourceRef": {
-                      "Source": "subquery"
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
-        "howCreated": "User"
-      }
-    ]
   }
 }

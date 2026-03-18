@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
-  "name": "8dfaece14d7aa5440d85",
+  "name": "6d0f7bdffd491e8eaecd",
   "position": {
-    "x": 11.743119266055047,
-    "y": 9.7659614304437383,
-    "z": 4000,
-    "height": 255.54265742994451,
-    "width": 518.37483617300131,
-    "tabOrder": 0
+    "x": 52.073490813648291,
+    "y": 450.18372703412069,
+    "z": 7000,
+    "height": 270.4461942257218,
+    "width": 626.56167979002623,
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "donutChart",
@@ -23,11 +23,11 @@
                       "Entity": "Female Dormitories in Budapest"
                     }
                   },
-                  "Property": "Hotel Name"
+                  "Property": "Reviews"
                 }
               },
-              "queryRef": "Female Dormitories in Budapest.Hotel Name",
-              "nativeQueryRef": "Hotel Name",
+              "queryRef": "Female Dormitories in Budapest.Reviews",
+              "nativeQueryRef": "Reviews",
               "active": true
             }
           ]
@@ -42,11 +42,11 @@
                       "Entity": "Female Dormitories in Budapest"
                     }
                   },
-                  "Property": "AVG Rating"
+                  "Property": "Total Revenue"
                 }
               },
-              "queryRef": "Female Dormitories in Budapest.AVG Rating",
-              "nativeQueryRef": "AVG Rating"
+              "queryRef": "Female Dormitories in Budapest.Total Revenue",
+              "nativeQueryRef": "Total Revenue"
             }
           ]
         }
@@ -61,7 +61,7 @@
                     "Entity": "Female Dormitories in Budapest"
                   }
                 },
-                "Property": "AVG Rating"
+                "Property": "Total Revenue"
               }
             },
             "direction": "Descending"
@@ -71,6 +71,26 @@
       }
     },
     "objects": {
+      "legend": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "showTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
       "dataPoint": [
         {
           "properties": {
@@ -78,26 +98,6 @@
               "expr": {
                 "Literal": {
                   "Value": "0D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "legend": [
-        {
-          "properties": {
-            "showTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
                 }
               }
             }
@@ -114,17 +114,17 @@
                 }
               }
             },
-            "position": {
-              "expr": {
-                "Literal": {
-                  "Value": "'outside'"
-                }
-              }
-            },
             "labelStyle": {
               "expr": {
                 "Literal": {
                   "Value": "'Percent of total'"
+                }
+              }
+            },
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'outside'"
                 }
               }
             }
@@ -189,11 +189,10 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "62059b3b4162c9a1140a",
   "filterConfig": {
     "filters": [
       {
-        "name": "59afaf95063e0c240980",
+        "name": "a143d49f14e799167683",
         "field": {
           "Column": {
             "Expression": {
@@ -201,7 +200,7 @@
                 "Entity": "Female Dormitories in Budapest"
               }
             },
-            "Property": "Hotel Name"
+            "Property": "Reviews"
           }
         },
         "type": "TopN",
@@ -229,7 +228,7 @@
                               "Source": "f"
                             }
                           },
-                          "Property": "Hotel Name"
+                          "Property": "Reviews"
                         },
                         "Name": "field"
                       }
@@ -246,10 +245,10 @@
                                     "Source": "f"
                                   }
                                 },
-                                "Property": "Hotel Name"
+                                "Property": "Reviews"
                               }
                             },
-                            "Function": 3
+                            "Function": 2
                           }
                         }
                       }
@@ -278,7 +277,7 @@
                             "Source": "f"
                           }
                         },
-                        "Property": "Hotel Name"
+                        "Property": "Reviews"
                       }
                     }
                   ],
@@ -292,6 +291,20 @@
             }
           ]
         }
+      },
+      {
+        "name": "e557b0776b99c9a6573c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Female Dormitories in Budapest"
+              }
+            },
+            "Property": "Total Revenue"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

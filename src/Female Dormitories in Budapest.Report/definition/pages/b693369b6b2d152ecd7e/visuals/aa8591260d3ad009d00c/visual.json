@@ -6,7 +6,8 @@
     "y": 0,
     "z": 6000,
     "height": 246.60550458715593,
-    "width": 1229.6723460026212
+    "width": 1229.6723460026212,
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "tableEx",
@@ -685,103 +686,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "654101244dc95a60a3a9",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "810fb76c758678900b69",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Female Dormitories in Budapest"
-              }
-            },
-            "Property": "Hotel Name"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "6d6f8d27a001405d030e",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Female Dormitories in Budapest"
-                  }
-                },
-                "Property": "Price"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "71305223e1131dc6e2d4",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Female Dormitories in Budapest"
-                  }
-                },
-                "Property": "Rating"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "93811200a977dac0a4a1",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Female Dormitories in Budapest"
-              }
-            },
-            "Property": "Reviews"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "467f6c5cb56200a342e6",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Female Dormitories in Budapest"
-              }
-            },
-            "Property": "Total Revenue"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "d442732151ce95619603",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Female Dormitories in Budapest"
-              }
-            },
-            "Property": "AVG Rating"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
-  }
+  "parentGroupName": "654101244dc95a60a3a9"
 }
