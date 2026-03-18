@@ -13,9 +13,8 @@
             "solid": {
               "color": {
                 "expr": {
-                  "ThemeDataColor": {
-                    "ColorId": 0,
-                    "Percent": -0.2
+                  "Literal": {
+                    "Value": "'#F8F8F8'"
                   }
                 }
               }
@@ -25,6 +24,19 @@
             "expr": {
               "Literal": {
                 "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "width": {
+            "expr": {
+              "Literal": {
+                "Value": "199L"
               }
             }
           }

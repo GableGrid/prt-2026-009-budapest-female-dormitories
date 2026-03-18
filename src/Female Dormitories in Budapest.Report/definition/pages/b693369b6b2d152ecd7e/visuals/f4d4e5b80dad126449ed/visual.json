@@ -1,70 +1,63 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
-  "name": "98153a42b650e5a01be9",
+  "name": "f4d4e5b80dad126449ed",
   "position": {
-    "x": 830.30567306951934,
-    "y": 0,
-    "z": 4000,
-    "height": 65.4167285693062,
-    "width": 163.03572932741574
+    "x": 1039.7900262467192,
+    "y": 77.270341207349077,
+    "z": 5000,
+    "height": 72.230971128608928,
+    "width": 228.45144356955379,
+    "tabOrder": 4000
   },
   "visual": {
-    "visualType": "card",
+    "visualType": "slicer",
     "query": {
       "queryState": {
         "Values": {
           "projections": [
             {
               "field": {
-                "Measure": {
+                "Column": {
                   "Expression": {
                     "SourceRef": {
                       "Entity": "Female Dormitories in Budapest"
                     }
                   },
-                  "Property": "AVG Rating"
+                  "Property": "Hotel Name"
                 }
               },
-              "queryRef": "Female Dormitories in Budapest.AVG Rating",
-              "nativeQueryRef": "AVG Rating"
+              "queryRef": "Female Dormitories in Budapest.Hotel Name",
+              "nativeQueryRef": "Hotel Name",
+              "active": true
             }
           ]
         }
       },
       "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Measure": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Female Dormitories in Budapest"
-                  }
-                },
-                "Property": "AVG Rating"
-              }
-            },
-            "direction": "Descending"
-          }
-        ],
         "isDefaultSort": true
       }
     },
     "objects": {
-      "labels": [
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Dropdown'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "items": [
         {
           "properties": {
             "fontFamily": {
               "expr": {
                 "Literal": {
-                  "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "18D"
+                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
                 }
               }
             },
@@ -75,12 +68,12 @@
                 }
               }
             },
-            "color": {
+            "background": {
               "solid": {
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#000000'"
+                      "Value": "'#ffffff'"
                     }
                   }
                 }
@@ -89,41 +82,45 @@
           }
         }
       ],
-      "categoryLabels": [
+      "header": [
         {
           "properties": {
-            "fontSize": {
+            "fontFamily": {
               "expr": {
                 "Literal": {
-                  "Value": "9D"
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
-    "visualContainerObjects": {
-      "background": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
                 }
               }
             },
-            "transparency": {
+            "textSize": {
               "expr": {
                 "Literal": {
-                  "Value": "0D"
+                  "Value": "11D"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0.1
+                    }
+                  }
                 }
               }
             }
           }
         }
       ],
+      "general": [
+        {
+          "properties": {}
+        }
+      ]
+    },
+    "visualContainerObjects": {
       "title": [
         {
           "properties": {
@@ -137,7 +134,7 @@
           }
         }
       ],
-      "border": [
+      "background": [
         {
           "properties": {
             "show": {
@@ -147,18 +144,19 @@
                 }
               }
             },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 8,
-                      "Percent": 0.2
-                    }
-                  }
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
-            },
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
             "width": {
               "expr": {
                 "Literal": {
@@ -170,7 +168,29 @@
         }
       ]
     },
+    "syncGroup": {
+      "groupName": "Supplier",
+      "fieldChanges": true,
+      "filterChanges": true
+    },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "0e6a7076ec746e04c3c3"
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "6c29d09a0087b5d50ce2",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Female Dormitories in Budapest"
+              }
+            },
+            "Property": "Hotel Name"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
 }

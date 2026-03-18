@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "e384b25ed750e15b02d6",
   "position": {
-    "x": 9.9212598425196852,
-    "y": 162.99212598425197,
-    "z": 1000,
-    "height": 263.62204724409446,
-    "width": 473.38582677165351,
+    "x": 11.758530183727032,
+    "y": 6.7191601049868837,
+    "z": 3000,
+    "height": 270.4461942257218,
+    "width": 673.59580052493436,
     "tabOrder": 0
   },
   "visual": {
@@ -444,6 +444,13 @@
                   "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
                 }
               }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Price by Hotel Name'"
+                }
+              }
             }
           }
         }
@@ -484,6 +491,7 @@
     },
     "drillFilterOtherVisuals": true
   },
+  "parentGroupName": "c64d106260d1c061d6eb",
   "filterConfig": {
     "filters": [
       {
@@ -589,7 +597,7 @@
         "howCreated": "User"
       },
       {
-        "name": "559addd373208ddc74b9",
+        "name": "4b92865b005cdc68072d",
         "field": {
           "Column": {
             "Expression": {
@@ -603,7 +611,7 @@
         "type": "Categorical"
       },
       {
-        "name": "db68ce30b829ae901623",
+        "name": "05ca7212b1cb89d29858",
         "field": {
           "Aggregation": {
             "Expression": {

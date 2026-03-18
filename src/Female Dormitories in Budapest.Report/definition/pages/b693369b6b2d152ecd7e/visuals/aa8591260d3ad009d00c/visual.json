@@ -5,8 +5,8 @@
     "x": 0,
     "y": 0,
     "z": 6000,
-    "height": 262.04724409448818,
-    "width": 905.40682414698165
+    "height": 251.96850393700785,
+    "width": 1254.8031496062993
   },
   "visual": {
     "visualType": "tableEx",
@@ -81,6 +81,48 @@
               },
               "queryRef": "Female Dormitories in Budapest.Reviews",
               "nativeQueryRef": "Reviews"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Female Dormitories in Budapest"
+                    }
+                  },
+                  "Property": "Total Revenue"
+                }
+              },
+              "queryRef": "Female Dormitories in Budapest.Total Revenue",
+              "nativeQueryRef": "Total Revenue"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Female Dormitories in Budapest"
+                    }
+                  },
+                  "Property": "Total Count"
+                }
+              },
+              "queryRef": "Female Dormitories in Budapest.Total Count",
+              "nativeQueryRef": "Total Count"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Female Dormitories in Budapest"
+                    }
+                  },
+                  "Property": "AVG Rating"
+                }
+              },
+              "queryRef": "Female Dormitories in Budapest.AVG Rating",
+              "nativeQueryRef": "AVG Rating"
             }
           ]
         }
@@ -186,7 +228,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "13D"
                 }
               }
             },
@@ -220,7 +262,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "9D"
+                  "Value": "10D"
                 }
               }
             }
@@ -345,7 +387,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "138.95538800663806D"
+                  "Value": "169.21029206395548D"
                 }
               }
             }
@@ -359,13 +401,83 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "181.22530834414744D"
+                  "Value": "169.49693130159147D"
                 }
               }
             }
           },
           "selector": {
             "metadata": "Sum(Female Dormitories in Budapest.Rating)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "141.24145228852456D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Female Dormitories in Budapest.Reviews"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "335.70664798658225D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Female Dormitories in Budapest.Hotel Name"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "169.10630370061648D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Female Dormitories in Budapest.Total Revenue"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "132.67241193893753D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Female Dormitories in Budapest.AVG Rating"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "114.11555643507032D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Female Dormitories in Budapest.Total Count"
           }
         }
       ],
@@ -402,13 +514,83 @@
             "alignment": {
               "expr": {
                 "Literal": {
-                  "Value": "'Center'"
+                  "Value": "'Left'"
                 }
               }
             }
           },
           "selector": {
             "metadata": "Sum(Female Dormitories in Budapest.Rating)"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(Female Dormitories in Budapest.Price)"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Female Dormitories in Budapest.Reviews"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Female Dormitories in Budapest.Total Revenue"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Female Dormitories in Budapest.AVG Rating"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Female Dormitories in Budapest.Total Count"
           }
         }
       ]
@@ -554,7 +736,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "2a6c39e77709ed878227",
+        "name": "b4ec80899b45d80ca4a0",
         "field": {
           "Column": {
             "Expression": {
@@ -568,7 +750,7 @@
         "type": "Categorical"
       },
       {
-        "name": "97df25500eeb76bd2987",
+        "name": "14819ed74ea33951bd06",
         "field": {
           "Aggregation": {
             "Expression": {
@@ -587,7 +769,7 @@
         "type": "Advanced"
       },
       {
-        "name": "48b264000d6a00dea247",
+        "name": "323904be5da3a08981c2",
         "field": {
           "Aggregation": {
             "Expression": {
@@ -606,7 +788,7 @@
         "type": "Advanced"
       },
       {
-        "name": "127b3f0ac51bd4153430",
+        "name": "3d47bba3d83b44610281",
         "field": {
           "Column": {
             "Expression": {
@@ -618,6 +800,48 @@
           }
         },
         "type": "Categorical"
+      },
+      {
+        "name": "e1097bc9b7a190040b00",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Female Dormitories in Budapest"
+              }
+            },
+            "Property": "Total Revenue"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "100af60c1d666a567688",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Female Dormitories in Budapest"
+              }
+            },
+            "Property": "AVG Rating"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "b150711225097903218d",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Female Dormitories in Budapest"
+              }
+            },
+            "Property": "Total Count"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }
