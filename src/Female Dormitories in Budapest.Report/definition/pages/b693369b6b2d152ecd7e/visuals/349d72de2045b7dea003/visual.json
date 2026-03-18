@@ -3,10 +3,11 @@
   "name": "349d72de2045b7dea003",
   "position": {
     "x": 0,
-    "y": 2.1698067664511349,
+    "y": 2.29624208158262,
     "z": 0,
-    "height": 64.4034889237619,
-    "width": 163.27421096193751
+    "height": 68.15630025403587,
+    "width": 164.61856792193461,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "card",
@@ -79,8 +80,9 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#000000'"
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0.1
                     }
                   }
                 }

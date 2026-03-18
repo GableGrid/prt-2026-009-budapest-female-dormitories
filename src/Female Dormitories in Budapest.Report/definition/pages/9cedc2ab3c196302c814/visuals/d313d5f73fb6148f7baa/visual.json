@@ -1,71 +1,63 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
-  "name": "0d226c86da07a465a10b",
+  "name": "d313d5f73fb6148f7baa",
   "position": {
-    "x": 627.20333748536041,
-    "y": 0,
-    "z": 3000,
-    "height": 68.15630025403587,
-    "width": 163.91790645452494,
-    "tabOrder": 0
+    "x": 1053.5255570117956,
+    "y": 87.2346002621232,
+    "z": 0,
+    "height": 75.491480996068148,
+    "width": 214.73132372214943,
+    "tabOrder": 3
   },
   "visual": {
-    "visualType": "card",
+    "visualType": "slicer",
     "query": {
       "queryState": {
         "Values": {
           "projections": [
             {
               "field": {
-                "Measure": {
+                "Column": {
                   "Expression": {
                     "SourceRef": {
                       "Entity": "Female Dormitories in Budapest"
                     }
                   },
-                  "Property": "AVG Rating"
+                  "Property": "Hotel Name"
                 }
               },
-              "queryRef": "Female Dormitories in Budapest.AVG Rating",
-              "nativeQueryRef": "AVG Rating"
+              "queryRef": "Female Dormitories in Budapest.Hotel Name",
+              "nativeQueryRef": "Hotel Name",
+              "active": true
             }
           ]
         }
       },
       "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Measure": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Female Dormitories in Budapest"
-                  }
-                },
-                "Property": "AVG Rating"
-              }
-            },
-            "direction": "Descending"
-          }
-        ],
         "isDefaultSort": true
       }
     },
     "objects": {
-      "labels": [
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Dropdown'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "items": [
         {
           "properties": {
             "fontFamily": {
               "expr": {
                 "Literal": {
-                  "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "18D"
+                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
                 }
               }
             },
@@ -76,7 +68,50 @@
                 }
               }
             },
-            "color": {
+            "background": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#ffffff'"
+                    }
+                  }
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0.2
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "header": [
+        {
+          "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "fontColor": {
               "solid": {
                 "color": {
                   "expr": {
@@ -87,45 +122,24 @@
                   }
                 }
               }
-            }
-          }
-        }
-      ],
-      "categoryLabels": [
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "9D"
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
-    "visualContainerObjects": {
-      "background": [
-        {
-          "properties": {
+            },
             "show": {
               "expr": {
                 "Literal": {
                   "Value": "true"
                 }
               }
-            },
-            "transparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
-                }
-              }
             }
           }
         }
       ],
+      "general": [
+        {
+          "properties": {}
+        }
+      ]
+    },
+    "visualContainerObjects": {
       "title": [
         {
           "properties": {
@@ -139,7 +153,7 @@
           }
         }
       ],
-      "border": [
+      "background": [
         {
           "properties": {
             "show": {
@@ -149,18 +163,19 @@
                 }
               }
             },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 8,
-                      "Percent": 0.2
-                    }
-                  }
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
-            },
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
             "width": {
               "expr": {
                 "Literal": {
@@ -172,7 +187,11 @@
         }
       ]
     },
+    "syncGroup": {
+      "groupName": "Supplier",
+      "fieldChanges": true,
+      "filterChanges": true
+    },
     "drillFilterOtherVisuals": true
-  },
-  "parentGroupName": "0e6a7076ec746e04c3c3"
+  }
 }

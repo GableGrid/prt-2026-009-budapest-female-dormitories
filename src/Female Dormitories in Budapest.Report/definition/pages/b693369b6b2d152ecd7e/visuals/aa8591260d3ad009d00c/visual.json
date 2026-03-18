@@ -5,8 +5,8 @@
     "x": 0,
     "y": 0,
     "z": 6000,
-    "height": 251.96850393700785,
-    "width": 1254.8031496062993
+    "height": 246.60550458715593,
+    "width": 1229.6723460026212
   },
   "visual": {
     "visualType": "tableEx",
@@ -104,20 +104,6 @@
                       "Entity": "Female Dormitories in Budapest"
                     }
                   },
-                  "Property": "Total Count"
-                }
-              },
-              "queryRef": "Female Dormitories in Budapest.Total Count",
-              "nativeQueryRef": "Total Count"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Female Dormitories in Budapest"
-                    }
-                  },
                   "Property": "AVG Rating"
                 }
               },
@@ -131,18 +117,13 @@
         "sort": [
           {
             "field": {
-              "Aggregation": {
+              "Column": {
                 "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "Female Dormitories in Budapest"
-                      }
-                    },
-                    "Property": "Rating"
+                  "SourceRef": {
+                    "Entity": "Female Dormitories in Budapest"
                   }
                 },
-                "Function": 0
+                "Property": "Hotel Name"
               }
             },
             "direction": "Ascending"
@@ -387,7 +368,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "169.21029206395548D"
+                  "Value": "169.1674143458386D"
                 }
               }
             }
@@ -401,7 +382,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "169.49693130159147D"
+                  "Value": "156.1145814788303D"
                 }
               }
             }
@@ -415,7 +396,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "141.24145228852456D"
+                  "Value": "139.58033116983145D"
                 }
               }
             }
@@ -429,7 +410,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "335.70664798658225D"
+                  "Value": "436.52863227307193D"
                 }
               }
             }
@@ -443,7 +424,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "169.10630370061648D"
+                  "Value": "157.38947777717172D"
                 }
               }
             }
@@ -457,27 +438,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "132.67241193893753D"
+                  "Value": "149.48979462632667D"
                 }
               }
             }
           },
           "selector": {
             "metadata": "Female Dormitories in Budapest.AVG Rating"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "114.11555643507032D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Female Dormitories in Budapest.Total Count"
           }
         }
       ],
@@ -577,20 +544,6 @@
           },
           "selector": {
             "metadata": "Female Dormitories in Budapest.AVG Rating"
-          }
-        },
-        {
-          "properties": {
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Center'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Female Dormitories in Budapest.Total Count"
           }
         }
       ]
@@ -736,7 +689,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "b4ec80899b45d80ca4a0",
+        "name": "810fb76c758678900b69",
         "field": {
           "Column": {
             "Expression": {
@@ -750,7 +703,7 @@
         "type": "Categorical"
       },
       {
-        "name": "14819ed74ea33951bd06",
+        "name": "6d6f8d27a001405d030e",
         "field": {
           "Aggregation": {
             "Expression": {
@@ -769,7 +722,7 @@
         "type": "Advanced"
       },
       {
-        "name": "323904be5da3a08981c2",
+        "name": "71305223e1131dc6e2d4",
         "field": {
           "Aggregation": {
             "Expression": {
@@ -788,7 +741,7 @@
         "type": "Advanced"
       },
       {
-        "name": "3d47bba3d83b44610281",
+        "name": "93811200a977dac0a4a1",
         "field": {
           "Column": {
             "Expression": {
@@ -802,7 +755,7 @@
         "type": "Categorical"
       },
       {
-        "name": "e1097bc9b7a190040b00",
+        "name": "467f6c5cb56200a342e6",
         "field": {
           "Measure": {
             "Expression": {
@@ -816,7 +769,7 @@
         "type": "Advanced"
       },
       {
-        "name": "100af60c1d666a567688",
+        "name": "d442732151ce95619603",
         "field": {
           "Measure": {
             "Expression": {
@@ -825,20 +778,6 @@
               }
             },
             "Property": "AVG Rating"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "b150711225097903218d",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Female Dormitories in Budapest"
-              }
-            },
-            "Property": "Total Count"
           }
         },
         "type": "Advanced"

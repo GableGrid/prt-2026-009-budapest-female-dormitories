@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
-  "name": "0d226c86da07a465a10b",
+  "name": "12834b6ee5fc968ee089",
   "position": {
-    "x": 627.20333748536041,
-    "y": 0,
-    "z": 3000,
-    "height": 68.15630025403587,
-    "width": 163.91790645452494,
-    "tabOrder": 0
+    "x": 418.26793174976427,
+    "y": 1.2152040134822875,
+    "z": 2000,
+    "height": 67.619636472508049,
+    "width": 163.29099882578996,
+    "tabOrder": 4
   },
   "visual": {
     "visualType": "card",
@@ -23,11 +23,11 @@
                       "Entity": "Female Dormitories in Budapest"
                     }
                   },
-                  "Property": "AVG Rating"
+                  "Property": "Total Count"
                 }
               },
-              "queryRef": "Female Dormitories in Budapest.AVG Rating",
-              "nativeQueryRef": "AVG Rating"
+              "queryRef": "Female Dormitories in Budapest.Total Count",
+              "nativeQueryRef": "Total Count"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "Female Dormitories in Budapest"
                   }
                 },
-                "Property": "AVG Rating"
+                "Property": "Total Count"
               }
             },
             "direction": "Descending"
@@ -174,5 +174,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "0e6a7076ec746e04c3c3"
+  "parentGroupName": "f235d53d05a006d7831e"
 }

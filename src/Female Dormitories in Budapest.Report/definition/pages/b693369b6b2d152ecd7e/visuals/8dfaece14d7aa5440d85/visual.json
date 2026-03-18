@@ -2,11 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "8dfaece14d7aa5440d85",
   "position": {
-    "x": 12.017365753809132,
-    "y": 13.438320209973767,
+    "x": 11.743119266055047,
+    "y": 9.7659614304437383,
     "z": 4000,
-    "height": 263.72703412073491,
-    "width": 518.4634939500487
+    "height": 255.54265742994451,
+    "width": 518.37483617300131,
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "donutChart",
@@ -77,6 +78,53 @@
               "expr": {
                 "Literal": {
                   "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "showTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'outside'"
+                }
+              }
+            },
+            "labelStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Percent of total'"
                 }
               }
             }
@@ -246,7 +294,7 @@
         }
       },
       {
-        "name": "81caa2c7257701c6c700",
+        "name": "6004f132018efb81f8cc",
         "field": {
           "Measure": {
             "Expression": {
