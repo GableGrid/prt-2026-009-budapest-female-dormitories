@@ -2,12 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "6d0f7bdffd491e8eaecd",
   "position": {
-    "x": 52.073490813648291,
-    "y": 450.18372703412069,
-    "z": 7000,
-    "height": 270.4461942257218,
-    "width": 626.56167979002623,
-    "tabOrder": 6000
+    "x": 10.049552738271428,
+    "y": 8.4432717678100531,
+    "z": 8000,
+    "height": 251.60949868073891,
+    "width": 597.948387927151
   },
   "visual": {
     "visualType": "donutChart",
@@ -77,7 +76,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -185,10 +184,24 @@
             }
           }
         }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
   },
+  "parentGroupName": "1629e0dd93b9aec790bb",
   "filterConfig": {
     "filters": [
       {
@@ -293,7 +306,7 @@
         }
       },
       {
-        "name": "e557b0776b99c9a6573c",
+        "name": "b0260af5551cc4431950",
         "field": {
           "Measure": {
             "Expression": {

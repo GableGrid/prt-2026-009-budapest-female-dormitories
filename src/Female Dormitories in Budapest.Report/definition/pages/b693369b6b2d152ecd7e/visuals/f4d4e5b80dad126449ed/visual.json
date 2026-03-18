@@ -23,11 +23,11 @@
                       "Entity": "Female Dormitories in Budapest"
                     }
                   },
-                  "Property": "Hotel Name"
+                  "Property": "Rating"
                 }
               },
-              "queryRef": "Female Dormitories in Budapest.Hotel Name",
-              "nativeQueryRef": "Hotel Name",
+              "queryRef": "Female Dormitories in Budapest.Rating",
+              "nativeQueryRef": "Rating",
               "active": true
             }
           ]

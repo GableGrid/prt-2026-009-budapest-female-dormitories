@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "a491bca82af1cacd20f2",
   "position": {
-    "x": 715.59055118110234,
-    "y": 166.29921259842519,
-    "z": 4000,
-    "height": 283.88451443569551,
-    "width": 564.40944881889766,
+    "x": 10.078740157480297,
+    "y": 10.078740157480297,
+    "z": 5000,
+    "height": 235.17060367454067,
+    "width": 596.32545931758523,
     "tabOrder": 3000
   },
   "visual": {
@@ -885,6 +885,13 @@
                   "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
                 }
               }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Rating by Reviews'"
+                }
+              }
             }
           }
         }
@@ -925,6 +932,7 @@
     },
     "drillFilterOtherVisuals": true
   },
+  "parentGroupName": "6958da0fc370d14490e5",
   "filterConfig": {
     "filters": [
       {
@@ -989,7 +997,7 @@
                         }
                       }
                     ],
-                    "Top": 5
+                    "Top": 6
                   }
                 }
               },
@@ -1028,6 +1036,34 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "e7520312b6d7ef2fcac1",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Female Dormitories in Budapest"
+              }
+            },
+            "Property": "Reviews"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "8b951f24d7f4288b42ba",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Female Dormitories in Budapest"
+              }
+            },
+            "Property": "AVG Rating"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

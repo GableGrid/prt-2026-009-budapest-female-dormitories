@@ -2,12 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "47d9c7be052fee8287a8",
   "position": {
-    "x": 31.916010498687662,
-    "y": 188.13648293963254,
-    "z": 6000,
-    "height": 240.20997375328082,
-    "width": 626.56167979002623,
-    "tabOrder": 5000
+    "x": 13.438320209973753,
+    "y": 9.5748031496063053,
+    "z": 7000,
+    "height": 234.58267716535423,
+    "width": 598.005249343832
   },
   "visual": {
     "visualType": "lineChart",
@@ -903,6 +902,13 @@
                   "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
                 }
               }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Rating & Revenue Performance'"
+                }
+              }
             }
           }
         }
@@ -943,6 +949,7 @@
     },
     "drillFilterOtherVisuals": true
   },
+  "parentGroupName": "c397d4039d970d0119e0",
   "filterConfig": {
     "filters": [
       {
@@ -1045,6 +1052,34 @@
             }
           ]
         }
+      },
+      {
+        "name": "47420a9424fa760eb59c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Female Dormitories in Budapest"
+              }
+            },
+            "Property": "AVG Rating"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "0e30deb93e6f8a827986",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Female Dormitories in Budapest"
+              }
+            },
+            "Property": "Total Revenue"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

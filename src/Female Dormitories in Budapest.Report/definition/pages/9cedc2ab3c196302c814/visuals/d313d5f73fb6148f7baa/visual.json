@@ -4,7 +4,7 @@
   "position": {
     "x": 1053.5255570117956,
     "y": 87.2346002621232,
-    "z": 0,
+    "z": 1000,
     "height": 75.491480996068148,
     "width": 214.73132372214943,
     "tabOrder": 0
@@ -23,11 +23,11 @@
                       "Entity": "Female Dormitories in Budapest"
                     }
                   },
-                  "Property": "Hotel Name"
+                  "Property": "Rating"
                 }
               },
-              "queryRef": "Female Dormitories in Budapest.Hotel Name",
-              "nativeQueryRef": "Hotel Name",
+              "queryRef": "Female Dormitories in Budapest.Rating",
+              "nativeQueryRef": "Rating",
               "active": true
             }
           ]

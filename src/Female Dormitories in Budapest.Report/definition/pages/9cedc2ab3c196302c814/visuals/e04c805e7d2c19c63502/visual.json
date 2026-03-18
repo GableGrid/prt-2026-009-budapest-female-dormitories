@@ -2,12 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "e04c805e7d2c19c63502",
   "position": {
-    "x": 692.07349081364828,
-    "y": 450.18372703412069,
-    "z": 3000,
-    "height": 270.4461942257218,
-    "width": 564.40944881889766,
-    "tabOrder": 1000
+    "x": 11.757368814640273,
+    "y": 8.1842757013127532,
+    "z": 4000,
+    "height": 252.07569160043383,
+    "width": 601.30543366303118
   },
   "visual": {
     "visualType": "scatterChart",
@@ -893,6 +892,13 @@
                   "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
                 }
               }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Revenue and Average Rating Analysis'"
+                }
+              }
             }
           }
         }
@@ -932,5 +938,52 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "parentGroupName": "a4f1494bb910e8b74c75",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "63aebb6c8383ae296832",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Female Dormitories in Budapest"
+              }
+            },
+            "Property": "Reviews"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "122f30f490bfd8cb9508",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Female Dormitories in Budapest"
+              }
+            },
+            "Property": "Total Revenue"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "4cf6f5e3a13556535ca5",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Female Dormitories in Budapest"
+              }
+            },
+            "Property": "AVG Rating"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

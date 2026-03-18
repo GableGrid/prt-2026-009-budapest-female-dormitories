@@ -17,17 +17,22 @@
           "projections": [
             {
               "field": {
-                "Measure": {
+                "Aggregation": {
                   "Expression": {
-                    "SourceRef": {
-                      "Entity": "Female Dormitories in Budapest"
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Female Dormitories in Budapest"
+                        }
+                      },
+                      "Property": "Rating"
                     }
                   },
-                  "Property": "AVG Rating"
+                  "Function": 0
                 }
               },
-              "queryRef": "Female Dormitories in Budapest.AVG Rating",
-              "nativeQueryRef": "AVG Rating"
+              "queryRef": "Sum(Female Dormitories in Budapest.Rating)",
+              "nativeQueryRef": "Sum of Rating"
             }
           ]
         }
@@ -36,13 +41,18 @@
         "sort": [
           {
             "field": {
-              "Measure": {
+              "Aggregation": {
                 "Expression": {
-                  "SourceRef": {
-                    "Entity": "Female Dormitories in Budapest"
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "Female Dormitories in Budapest"
+                      }
+                    },
+                    "Property": "Rating"
                   }
                 },
-                "Property": "AVG Rating"
+                "Function": 0
               }
             },
             "direction": "Descending"
@@ -174,5 +184,28 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "f235d53d05a006d7831e"
+  "parentGroupName": "f235d53d05a006d7831e",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "4539fde5deb94cc77bdf",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Female Dormitories in Budapest"
+                  }
+                },
+                "Property": "Rating"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
 }
