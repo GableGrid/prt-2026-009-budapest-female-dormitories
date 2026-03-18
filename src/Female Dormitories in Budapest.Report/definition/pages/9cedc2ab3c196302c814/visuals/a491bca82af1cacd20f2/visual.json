@@ -2,15 +2,15 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "a491bca82af1cacd20f2",
   "position": {
-    "x": 10.078740157480297,
-    "y": 10.078740157480297,
+    "x": 16.886543535620053,
+    "y": 8.4432717678100264,
     "z": 5000,
-    "height": 235.17060367454067,
-    "width": 596.32545931758523,
+    "height": 239.78891820580475,
+    "width": 589.34036939313989,
     "tabOrder": 3000
   },
   "visual": {
-    "visualType": "barChart",
+    "visualType": "columnChart",
     "query": {
       "queryState": {
         "Category": {
@@ -97,7 +97,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -105,6 +105,27 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            },
+            "gridlineThickness": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "gridlineTransparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "gridlineShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -923,7 +944,7 @@
             "fillTransparency": {
               "expr": {
                 "Literal": {
-                  "Value": "13D"
+                  "Value": "15D"
                 }
               }
             }
@@ -1148,6 +1169,39 @@
             ]
           }
         }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "zoom": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -1320,7 +1374,7 @@
         "howCreated": "User"
       },
       {
-        "name": "c688426f1ee0cc2eab57",
+        "name": "02c524286c165bf67edb",
         "field": {
           "Column": {
             "Expression": {
@@ -1334,7 +1388,7 @@
         "type": "Categorical"
       },
       {
-        "name": "804a26cafee34324db4d",
+        "name": "d163d53d6ce67e594400",
         "field": {
           "Measure": {
             "Expression": {
