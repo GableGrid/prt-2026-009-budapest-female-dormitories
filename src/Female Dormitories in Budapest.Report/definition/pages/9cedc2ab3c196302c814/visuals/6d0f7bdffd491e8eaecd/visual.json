@@ -195,7 +195,7 @@
             "innerRadiusRatio": {
               "expr": {
                 "Literal": {
-                  "Value": "70L"
+                  "Value": "75L"
                 }
               }
             },
@@ -305,6 +305,7 @@
     "filters": [
       {
         "name": "a143d49f14e799167683",
+        "ordinal": 0,
         "field": {
           "Column": {
             "Expression": {
@@ -365,7 +366,7 @@
                         }
                       }
                     ],
-                    "Top": 6
+                    "Top": 10
                   }
                 }
               },
@@ -403,7 +404,23 @@
             }
           ]
         }
+      },
+      {
+        "name": "a13481f8a40e4ae61d60",
+        "ordinal": 1,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Female Dormitories in Budapest"
+              }
+            },
+            "Property": "Total Revenue"
+          }
+        },
+        "type": "Advanced"
       }
-    ]
+    ],
+    "filterSortOrder": "Custom"
   }
 }

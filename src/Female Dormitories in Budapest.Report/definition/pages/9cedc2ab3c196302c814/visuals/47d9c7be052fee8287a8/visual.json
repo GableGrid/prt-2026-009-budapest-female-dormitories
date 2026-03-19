@@ -4,7 +4,7 @@
   "position": {
     "x": 26.917864427198403,
     "y": 186.1790884360303,
-    "z": 7000,
+    "z": 6000,
     "height": 234.58267716535423,
     "width": 598.005249343832,
     "tabOrder": 0
@@ -137,6 +137,13 @@
               "expr": {
                 "Literal": {
                   "Value": "1D"
+                }
+              }
+            },
+            "gridlineStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "'solid'"
                 }
               }
             }
@@ -943,7 +950,7 @@
             "legendMarkerRendering": {
               "expr": {
                 "Literal": {
-                  "Value": "'markerCircleDefault'"
+                  "Value": "'markerOnly'"
                 }
               }
             },
@@ -1010,6 +1017,27 @@
               }
             },
             "strokeShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "lineChartType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'smooth'"
+                }
+              }
+            },
+            "interpolationSmooth": {
+              "expr": {
+                "Literal": {
+                  "Value": "'monotoneX'"
+                }
+              }
+            },
+            "showMarker": {
               "expr": {
                 "Literal": {
                   "Value": "true"
@@ -1253,34 +1281,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "a6dd89529f5038632dd3",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Female Dormitories in Budapest"
-              }
-            },
-            "Property": "AVG Rating"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "9ed38910489bed328fe8",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Female Dormitories in Budapest"
-              }
-            },
-            "Property": "Total Revenue"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

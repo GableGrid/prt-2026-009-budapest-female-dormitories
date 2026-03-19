@@ -2,8 +2,8 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "a491bca82af1cacd20f2",
   "position": {
-    "x": 16.886543535620053,
-    "y": 8.4432717678100264,
+    "x": 16.683965526575307,
+    "y": 5.7341884345346914,
     "z": 5000,
     "height": 239.78891820580475,
     "width": 589.34036939313989,
@@ -36,17 +36,22 @@
           "projections": [
             {
               "field": {
-                "Measure": {
+                "Aggregation": {
                   "Expression": {
-                    "SourceRef": {
-                      "Entity": "Female Dormitories in Budapest"
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Female Dormitories in Budapest"
+                        }
+                      },
+                      "Property": "Rating"
                     }
                   },
-                  "Property": "AVG Rating"
+                  "Function": 0
                 }
               },
-              "queryRef": "Female Dormitories in Budapest.AVG Rating",
-              "nativeQueryRef": "AVG Rating"
+              "queryRef": "Sum(Female Dormitories in Budapest.Rating)",
+              "nativeQueryRef": "Sum of Rating"
             }
           ]
         }
@@ -55,13 +60,18 @@
         "sort": [
           {
             "field": {
-              "Measure": {
+              "Aggregation": {
                 "Expression": {
-                  "SourceRef": {
-                    "Entity": "Female Dormitories in Budapest"
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "Female Dormitories in Budapest"
+                      }
+                    },
+                    "Property": "Rating"
                   }
                 },
-                "Property": "AVG Rating"
+                "Function": 0
               }
             },
             "direction": "Descending"
@@ -77,7 +87,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
@@ -97,7 +107,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
@@ -894,7 +904,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#14213D'"
+                      "Value": "'#334155'"
                     }
                   }
                 }
@@ -903,7 +913,7 @@
             "fillTransparency": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "0D"
                 }
               }
             }
@@ -990,7 +1000,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#A8337D'"
+                      "Value": "'#BE185D'"
                     }
                   }
                 }
@@ -999,7 +1009,7 @@
             "fillTransparency": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "0D"
                 }
               }
             }
@@ -1085,9 +1095,8 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 6,
-                      "Percent": 0.2
+                    "Literal": {
+                      "Value": "'#DB2777'"
                     }
                   }
                 }
@@ -1096,7 +1105,7 @@
             "fillTransparency": {
               "expr": {
                 "Literal": {
-                  "Value": "15D"
+                  "Value": "0D"
                 }
               }
             }
@@ -1135,7 +1144,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#EC8FCA'"
+                      "Value": "'#F472B6'"
                     }
                   }
                 }
@@ -1144,7 +1153,7 @@
             "fillTransparency": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "0D"
                 }
               }
             }
@@ -1183,7 +1192,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#14213D'"
+                      "Value": "'#1E293B'"
                     }
                   }
                 }
@@ -1192,7 +1201,7 @@
             "fillTransparency": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "3D"
                 }
               }
             }
@@ -1231,7 +1240,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#14213D'"
+                      "Value": "'#64748B'"
                     }
                   }
                 }
@@ -1240,7 +1249,7 @@
             "fillTransparency": {
               "expr": {
                 "Literal": {
-                  "Value": "35D"
+                  "Value": "0D"
                 }
               }
             }
@@ -1294,6 +1303,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'Auto'"
+                }
+              }
+            },
+            "enableValueDataLabel": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -1482,6 +1498,39 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "974c969071db83c2139b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Female Dormitories in Budapest"
+              }
+            },
+            "Property": "Reviews"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "eb59d156541ee1ab0631",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Female Dormitories in Budapest"
+                  }
+                },
+                "Property": "Rating"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }
