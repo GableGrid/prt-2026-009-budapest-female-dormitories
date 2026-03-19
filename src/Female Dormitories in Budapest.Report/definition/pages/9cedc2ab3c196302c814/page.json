@@ -1,10 +1,15 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
   "name": "9cedc2ab3c196302c814",
   "displayName": "Price Analysis",
   "displayOption": "FitToPage",
   "height": 720,
   "width": 1280,
+  "pageBinding": {
+    "name": "04d4c2c93a8c4bf34e17",
+    "type": "Default",
+    "parameters": []
+  },
   "objects": {
     "background": [
       {
@@ -21,7 +26,7 @@
               "color": {
                 "expr": {
                   "Literal": {
-                    "Value": "'#F8F8F8'"
+                    "Value": "'#F3F4F6'"
                   }
                 }
               }

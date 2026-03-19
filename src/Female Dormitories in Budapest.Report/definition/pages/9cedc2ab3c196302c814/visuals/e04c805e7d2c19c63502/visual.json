@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "e04c805e7d2c19c63502",
   "position": {
-    "x": 25.329815303430081,
-    "y": 447.49340369393144,
+    "x": 13.509234828496044,
+    "y": 9.08175387301884,
     "z": 4000,
     "height": 253.29815303430081,
     "width": 601.16094986807389,
-    "tabOrder": 6000
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "scatterChart",
@@ -157,6 +157,34 @@
               "expr": {
                 "Literal": {
                   "Value": "1D"
+                }
+              }
+            },
+            "invertAxis": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "logAxisScale": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "gridlineShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "gridlineTransparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }
@@ -970,6 +998,54 @@
                   "Value": "true"
                 }
               }
+            },
+            "borderTransparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "borderWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "zoom": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "showOnValueAxis": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "showOnCategoryAxis": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "showLabels": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
             }
           }
         }
@@ -1039,69 +1115,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "144c2c285d60d55dbeb6",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Female Dormitories in Budapest"
-                  }
-                },
-                "Property": "Reviews"
-              }
-            },
-            "Function": 5
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "a73c893cbc05e60c8131",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Female Dormitories in Budapest"
-              }
-            },
-            "Property": "Total Revenue"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "011d4073fd2d45f71d6f",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Female Dormitories in Budapest"
-              }
-            },
-            "Property": "Hotel Name"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "756fed7c1c2471b30063",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Female Dormitories in Budapest"
-              }
-            },
-            "Property": "AVG Rating"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
-  }
+  "parentGroupName": "29c9b7830147ca9a78c1"
 }

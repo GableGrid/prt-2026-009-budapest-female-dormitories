@@ -1,10 +1,10 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "e384b25ed750e15b02d6",
   "position": {
-    "x": 11.743119266055047,
-    "y": 8.0883729638644439,
-    "z": 3000,
+    "x": 25.163826998689387,
+    "y": 182.55757348811085,
+    "z": 4000,
     "height": 253.97491106534358,
     "width": 674.39056356487549,
     "tabOrder": 0
@@ -87,11 +87,60 @@
             "innerPadding": {
               "expr": {
                 "Literal": {
-                  "Value": "22L"
+                  "Value": "17L"
                 }
               }
             },
             "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "switchAxisPosition": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "concatenateLabels": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "preferredCategoryWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "20D"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "25D"
+                }
+              }
+            },
+            "maxMarginFactor": {
+              "expr": {
+                "Literal": {
+                  "Value": "15L"
+                }
+              }
+            },
+            "bold": {
               "expr": {
                 "Literal": {
                   "Value": "false"
@@ -432,7 +481,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 2,
+                      "ColorId": 3,
                       "Percent": -0.5
                     }
                   }
@@ -442,7 +491,7 @@
             "fillTransparency": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "30D"
                 }
               }
             }
@@ -481,10 +530,17 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 2,
+                      "ColorId": 3,
                       "Percent": -0.5
                     }
                   }
+                }
+              }
+            },
+            "fillTransparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "40D"
                 }
               }
             }
@@ -572,7 +628,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 2,
+                      "ColorId": 3,
                       "Percent": -0.5
                     }
                   }
@@ -582,7 +638,7 @@
             "fillTransparency": {
               "expr": {
                 "Literal": {
-                  "Value": "30D"
+                  "Value": "45D"
                 }
               }
             }
@@ -621,7 +677,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 2,
+                      "ColorId": 3,
                       "Percent": -0.5
                     }
                   }
@@ -631,7 +687,7 @@
             "fillTransparency": {
               "expr": {
                 "Literal": {
-                  "Value": "40D"
+                  "Value": "55D"
                 }
               }
             }
@@ -670,8 +726,8 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 2,
-                      "Percent": -0.25
+                      "ColorId": 3,
+                      "Percent": -0.5
                     }
                   }
                 }
@@ -680,7 +736,7 @@
             "fillTransparency": {
               "expr": {
                 "Literal": {
-                  "Value": "57D"
+                  "Value": "60D"
                 }
               }
             }
@@ -719,8 +775,8 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 2,
-                      "Percent": -0.25
+                      "ColorId": 3,
+                      "Percent": -0.5
                     }
                   }
                 }
@@ -729,7 +785,7 @@
             "fillTransparency": {
               "expr": {
                 "Literal": {
-                  "Value": "75D"
+                  "Value": "72D"
                 }
               }
             }
@@ -899,7 +955,7 @@
             "fillTransparency": {
               "expr": {
                 "Literal": {
-                  "Value": "15D"
+                  "Value": "25D"
                 }
               }
             },
@@ -908,7 +964,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 2,
+                      "ColorId": 3,
                       "Percent": -0.5
                     }
                   }
@@ -991,6 +1047,117 @@
               }
             ]
           }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": -0.5
+                    }
+                  }
+                }
+              }
+            },
+            "fillTransparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "19D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Female Dormitories in Budapest"
+                          }
+                        },
+                        "Property": "Hotel Name"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'W Budapest'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": -0.5
+                    }
+                  }
+                }
+              }
+            },
+            "fillTransparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "82D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Female Dormitories in Budapest"
+                          }
+                        },
+                        "Property": "Hotel Name"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Westend Hostel'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
         }
       ]
     },
@@ -1058,7 +1225,6 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "c64d106260d1c061d6eb",
   "filterConfig": {
     "filters": [
       {
@@ -1115,15 +1281,15 @@
                                     "Source": "f"
                                   }
                                 },
-                                "Property": "Price"
+                                "Property": "Hotel Name"
                               }
                             },
-                            "Function": 0
+                            "Function": 3
                           }
                         }
                       }
                     ],
-                    "Top": 7
+                    "Top": 5
                   }
                 }
               },
