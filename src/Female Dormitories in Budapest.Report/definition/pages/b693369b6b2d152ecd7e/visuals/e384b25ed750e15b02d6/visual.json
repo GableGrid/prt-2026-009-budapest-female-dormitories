@@ -1407,39 +1407,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "b354fa4cd971a84d3e83",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Female Dormitories in Budapest"
-              }
-            },
-            "Property": "Hotel Name"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "a8bdd491f7c4b2a355cd",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Female Dormitories in Budapest"
-                  }
-                },
-                "Property": "Price"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

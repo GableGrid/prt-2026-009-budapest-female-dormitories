@@ -4,7 +4,7 @@
   "position": {
     "x": 1052.0316622691294,
     "y": 87.810026385224276,
-    "z": 7001,
+    "z": 8000,
     "height": 79.366754617414244,
     "width": 216.14775725593668,
     "tabOrder": 4001
@@ -168,23 +168,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "048c5fb472a51441ce47",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Female Dormitories in Budapest"
-              }
-            },
-            "Property": "Rating"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }
