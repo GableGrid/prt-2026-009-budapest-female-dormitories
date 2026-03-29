@@ -5,7 +5,7 @@
     "x": 16.683965526575307,
     "y": 5.7341884345346914,
     "z": 5000,
-    "height": 239.78891820580475,
+    "height": 238.10026385224276,
     "width": 589.34036939313989,
     "tabOrder": 1000
   },
@@ -1000,7 +1000,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#BE185D'"
+                      "Value": "'#64748B'"
                     }
                   }
                 }
@@ -1048,7 +1048,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#A8337D'"
+                      "Value": "'#BE185D'"
                     }
                   }
                 }
@@ -1057,7 +1057,7 @@
             "fillTransparency": {
               "expr": {
                 "Literal": {
-                  "Value": "25D"
+                  "Value": "0D"
                 }
               }
             }
@@ -1273,6 +1273,88 @@
                     "Right": {
                       "Literal": {
                         "Value": "'780'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#1E293B'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Female Dormitories in Budapest"
+                          }
+                        },
+                        "Property": "Reviews"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'231'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#DB2777'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Female Dormitories in Budapest"
+                          }
+                        },
+                        "Property": "Reviews"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'240'"
                       }
                     }
                   }

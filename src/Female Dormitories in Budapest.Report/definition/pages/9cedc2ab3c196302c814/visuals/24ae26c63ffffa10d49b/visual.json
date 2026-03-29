@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
-  "name": "602f45ed7512407200d7",
+  "name": "24ae26c63ffffa10d49b",
   "position": {
-    "x": 1050.170380078637,
-    "y": 87.2346002621232,
-    "z": 8000,
-    "height": 78.846657929226737,
-    "width": 218.08650065530801,
-    "tabOrder": 4000
+    "x": 1052.0316622691294,
+    "y": 87.810026385224276,
+    "z": 7001,
+    "height": 79.366754617414244,
+    "width": 216.14775725593668,
+    "tabOrder": 4001
   },
   "visual": {
     "visualType": "slicer",
@@ -27,7 +27,7 @@
                 }
               },
               "queryRef": "Female Dormitories in Budapest.Rating",
-              "nativeQueryRef": "Rating",
+              "nativeQueryRef": "Sum of Rating",
               "active": true
             }
           ]
@@ -51,6 +51,13 @@
       "header": [
         {
           "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
             "fontFamily": {
               "expr": {
                 "Literal": {
@@ -69,31 +76,6 @@
                   }
                 }
               }
-            },
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "general": [
-        {
-          "properties": {
-            "outlineColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
             }
           }
         }
@@ -107,13 +89,6 @@
                   "Value": "true"
                 }
               }
-            },
-            "position": {
-              "expr": {
-                "Literal": {
-                  "Value": "'right'"
-                }
-              }
             }
           }
         }
@@ -121,13 +96,6 @@
       "items": [
         {
           "properties": {
-            "padding": {
-              "expr": {
-                "Literal": {
-                  "Value": "4D"
-                }
-              }
-            },
             "fontColor": {
               "solid": {
                 "color": {
@@ -139,24 +107,26 @@
                   }
                 }
               }
+            },
+            "padding": {
+              "expr": {
+                "Literal": {
+                  "Value": "4D"
+                }
+              }
             }
           }
         }
       ]
     },
     "visualContainerObjects": {
-      "visualHeader": [
+      "title": [
         {
           "properties": {
-            "foreground": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": -0.6
-                    }
-                  }
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -172,6 +142,13 @@
                   "Value": "true"
                 }
               }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
             }
           }
         }
@@ -179,23 +156,10 @@
       "border": [
         {
           "properties": {
-            "show": {
+            "width": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "dropShadow": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
+                  "Value": "1D"
                 }
               }
             }
@@ -203,17 +167,12 @@
         }
       ]
     },
-    "syncGroup": {
-      "groupName": "Hotel Name",
-      "fieldChanges": true,
-      "filterChanges": true
-    },
     "drillFilterOtherVisuals": true
   },
   "filterConfig": {
     "filters": [
       {
-        "name": "cae9c34e289af4033651",
+        "name": "048c5fb472a51441ce47",
         "field": {
           "Column": {
             "Expression": {
